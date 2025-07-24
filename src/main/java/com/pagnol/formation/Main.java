@@ -26,7 +26,7 @@ public class Main {
         }
 
         // nombre aléatoire
-
+/*
         Random random = new Random();
         int nbr_magique = random.nextInt(10)+1;
         int nbr2;
@@ -38,6 +38,18 @@ public class Main {
              System.out.println(result);
 
         }while(nbr2 != nbr_magique);
+*/
+        // affichage du trigle du nombre choisi
+
+        System.out.println("entrez le nombre dont vous souhaiter avoir le triangle");
+        int nbr_traingle = scan.nextInt();
+
+        for(int i=0; i<=nbr_traingle;i++){
+            for(int j=1;j<=i; j++ ){
+                System.out.print(j);
+            }
+            System.out.println();
+        }
 
 
     }
