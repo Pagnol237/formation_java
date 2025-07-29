@@ -1,7 +1,16 @@
+/*
+ce que J'ai appris dans ce chapitre :
+- initialisé les tbleau simple et double
+- parcourir les tableau avec for et foreach
+- utiliser HashMap
+- utlisé la methode collection.sort pour ordoner un tableau
+- utiliser .split pour convertit des chaine de caractere en tableau;
+j'ai mis tous ces élément en pratique dans 3 exercice qui suive
+* */
 package com.pagnol.formation;
-
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -61,8 +70,19 @@ public class Main {
         String texte = text.nextLine();
         String [] tabTexte = texte.split(" ");
 
+        HashMap<String,Integer> occurences = new HashMap<>();
+
         for(String e: tabTexte){
-            System.out.println("- "+ e);
+            if(e.isEmpty()) continue;
+            if (occurences.containsKey(e)){
+                occurences.put(e,occurences.get(e)+1);
+            }else{
+                occurences.put(e,1);
+            }
+        }
+
+        for(String cle : occurences.keySet()){
+            System.out.println(cle+":"+occurences.get(cle));
         }
 
     }
