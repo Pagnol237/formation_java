@@ -5,6 +5,8 @@ package com.pagnol.formation;
 public class Main {
     public static void main(String[] args) {
         Personne user = new Personne("pagnol",29);
-        System.out.println(user.afficheInfo()+"\nMajeur: "+user.estMajeur());
+        Employe user2 = new Employe("franck pagnol nounjo",31,200000);
+       // System.out.println(user.afficheInfo()+"\nMajeur: "+user.estMajeur());
+        System.out.println(user2.afficheInfo());
     }
 }

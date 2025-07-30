@@ -2,8 +2,8 @@ package com.pagnol.formation;
 
 public class Personne {
 
-    private String nom;
-    private int age;
+    protected String nom;
+    protected int age;
 
     public Personne(String nom, int age){
         this.nom = nom;
