@@ -4,6 +4,7 @@ package com.pagnol.formation;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        System.out.println("le debut de la formation et je promet etre le  meilleur");
+        Personne user = new Personne("pagnol",29);
+        System.out.println(user.afficheInfo()+"\nMajeur: "+user.estMajeur());
     }
 }
