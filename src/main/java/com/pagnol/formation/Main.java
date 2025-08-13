@@ -10,6 +10,7 @@ public class Main {
         Employe user2 = new Employe("franck pagnol nounjo",31,200000);
        // System.out.println(user.afficheInfo()+"\nMajeur: "+user.estMajeur());
         System.out.println(user2.afficheInfo());*/
+        //exercice de gestion de vihicule
 
         Voiture v1 = new Voiture("Mercedess","GLK",2025,4,true,true);
         Voiture v2 = new Voiture("Huday","Elentra",2025,4,false,true);
